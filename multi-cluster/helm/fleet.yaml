@@ -19,7 +19,7 @@ targetCustomizations:
 - name: prod
   helm:
     values:
-      serviceType: LoadBalancer
+      serviceType: NodePort
       replicas: 3
   clusterSelector:
     matchLabels:
